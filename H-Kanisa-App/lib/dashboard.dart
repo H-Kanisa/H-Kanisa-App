@@ -132,11 +132,6 @@ class Dashboard extends StatelessWidget {
                     ),
                   ),
                 )),
-            if (Responsive.isDesktop(context))
-              Expanded(
-                flex: 4,
-                child: Padding(),
-              ),
           ],
         ),
       ),
