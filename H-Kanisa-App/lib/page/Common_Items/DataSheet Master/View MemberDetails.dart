@@ -10,10 +10,10 @@ Widget build(BuildContext context) => MaterialApp(
   color: AppColor.whiteHK,
   theme: ThemeData(
       primarySwatch: Colors.blue, scaffoldBackgroundColor: Colors.white),
-  home: viewMembers(),
+  home: viewMembersDetails(),
 );
 
-class viewMembers extends StatelessWidget {
+class viewMembersDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(

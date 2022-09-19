@@ -4,12 +4,13 @@ import 'package:responsive_dashboard/dashboard.dart';
 import 'package:responsive_dashboard/page/Common_Items/DataSheet%20Master/Pick%20Child.dart';
 import 'package:responsive_dashboard/page/Common_Items/DataSheet%20Master/Register%20Child.dart';
 import 'package:responsive_dashboard/page/Common_Items/DataSheet%20Master/Register%20Member.dart';
-import 'package:responsive_dashboard/page/Common_Items/DataSheet%20Master/Register%20Visitor.dart';
+import 'package:responsive_dashboard/page/Common_Items/DataSheet%20Master/View%20Members.dart';
 import 'package:responsive_dashboard/page/Common_Items_Page.dart';
 import 'package:responsive_dashboard/pallete.dart';
 
 import '../../component/CustomAppBar.dart';
 import '../../component/ListBuilder.dart';
+import 'DataSheet Master/Register Visitor.dart';
 
 Widget build(BuildContext context) => MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -56,6 +57,13 @@ class DataSheet extends StatelessWidget {
             title: "Register Child",
             onClicked: () => Navigator.of(context).push(MaterialPageRoute(
               builder: (context) => regChild(),
+            )),
+          ),
+          BuildList(
+            icon: Icons.child_care_rounded,
+            title: "View Members",
+            onClicked: () => Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => viewMembers(),
             )),
           ),
           BuildList(

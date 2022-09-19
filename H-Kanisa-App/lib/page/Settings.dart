@@ -14,7 +14,6 @@ import '../component/ListBuilder.dart';
 import 'Common_Items/Attendance Report.dart';
 import 'Common_Items/Attendance.dart';
 import 'Common_Items/DataSheet_master.dart';
-import 'Common_Items/Test Components.dart';
 import 'Common_Items/Visitation Report.dart';
 
 Widget build(BuildContext context) {
@@ -78,14 +77,6 @@ class StartState extends State<Common_Items> {
             desc: "Brief Description",
             onClicked: () => Navigator.of(context).push(MaterialPageRoute(
               builder: (context) => visitationReport(),
-            )),
-          ),
-          BuildList(
-            icon: Icons.person_pin_circle,
-            title: "Test Components",
-            desc: "Brief Description",
-            onClicked: () => Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => TestComponents(),
             )),
           ),
         ]),

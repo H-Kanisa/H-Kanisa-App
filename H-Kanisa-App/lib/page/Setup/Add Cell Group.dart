@@ -35,7 +35,7 @@ class addCell extends StatelessWidget {
                     FormText(text: "Cell"),
                     FormDropDown(text: "Church", list: church),
                     FormDropDown(text: "Branch", list: branch),
-                    FormDropDown(text: "College", list: college),
+                    FormDropDown(text: "College"),
                     FormDropDown(text: "Zone", list: zone),
                     FormButton(text: "Submit")
                   ],

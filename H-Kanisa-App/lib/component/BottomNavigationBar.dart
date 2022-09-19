@@ -12,44 +12,41 @@ class bottomNav extends StatefulWidget {
   State<StatefulWidget> createState() => bottomNavState();
 }
 
+int _selectedIndex = 1;
+
+
 class bottomNavState extends State<bottomNav> {
   List<Widget> _widgetOptions = <Widget>[Dashboard(), People(), manageUsers()];
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
+  void _selectedItem(BuildContext context, int index) {
+    switch (index) {
+      case 0:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => People(),
+        ));
+
+        break;
+      case 1:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => Dashboard(),
+        ));
+
+        break;
+      case 2:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => manageUsers(),
+        ));
+
+        break;
+    }
   }
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(body: Center(child: _widgetOptions[_selectedIndex]));
+    return new Scaffold(body: Center(child: _widgetOptions.elementAt(_selectedIndex)));
   }
 }
 
-int _selectedIndex = 1;
 
-void selectedItem(BuildContext context, int index) {
-  switch (index) {
-    case 0:
-      Navigator.of(context).push(MaterialPageRoute(
-        builder: (context) => People(),
-      ));
-
-      break;
-    case 1:
-      Navigator.of(context).push(MaterialPageRoute(
-        builder: (context) => Dashboard(),
-      ));
-
-      break;
-    case 2:
-      Navigator.of(context).push(MaterialPageRoute(
-        builder: (context) => manageUsers(),
-      ));
-
-      break;
-  }
-}
 
 Widget BottomNav({
   String title,
@@ -58,8 +55,7 @@ Widget BottomNav({
   return BottomNavigationBar(
     currentIndex: _selectedIndex,
     elevation: 10,
-    showSelectedLabels: false,
-    type: BottomNavigationBarType.shifting,
+   showSelectedLabels: false,
     showUnselectedLabels: false,
     selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
     selectedItemColor: AppColor.greenHK,
@@ -83,3 +79,4 @@ Widget BottomNav({
     ],
   );
 }
+
