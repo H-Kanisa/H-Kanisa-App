@@ -1,29 +1,18 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/Welcome/components/background.dart';
-import 'package:responsive_dashboard/page/ScreenWrapper.dart';
 import 'package:responsive_dashboard/pallete.dart';
-import 'package:responsive_dashboard/component/BottomNavigationBar.dart';
 import 'package:responsive_dashboard/component/NavBar.dart';
 import 'package:responsive_dashboard/component/appBarActionItems.dart';
-
 import 'package:responsive_dashboard/component/header.dart';
-import 'package:responsive_dashboard/component/historyTable.dart';
 import 'package:responsive_dashboard/component/infoCard.dart';
-import 'package:responsive_dashboard/component/menuItems.dart';
 import 'package:responsive_dashboard/component/navigatormenu.dart';
-import 'package:responsive_dashboard/component/BottomNavigationBar.dart';
-import 'package:responsive_dashboard/component/paymentDetailList.dart';
-import 'package:responsive_dashboard/config/menuItems.dart';
-import 'package:responsive_dashboard/config/responsive.dart';
-import 'package:responsive_dashboard/config/size_config.dart';
 import 'package:responsive_dashboard/page/Common_Items/DataSheet%20Master/Register%20Member.dart';
 import 'package:responsive_dashboard/page/Setup/Add%20Cell%20Group.dart';
 import 'package:responsive_dashboard/page/Setup/Add%20Church.dart';
 import 'package:responsive_dashboard/page/Setup/Add%20Zone.dart';
-import '../pallete.dart';
-import 'package:responsive_dashboard/style/style.dart';
-import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
+
+import 'Welcome/responsive/responsive.dart';
+import 'component/config/size_config.dart';
 
 class Dashboard extends StatelessWidget {
   GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
@@ -135,6 +124,7 @@ class Dashboard extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar:NavBar()
     );
   }
 }

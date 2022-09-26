@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/component/ExpandableCard.dart';
 import 'package:responsive_dashboard/component/navigatormenu.dart';
 import 'package:responsive_dashboard/dashboard.dart';
+import 'package:responsive_dashboard/page/Common_Items/Test%20Components.dart';
 import 'package:responsive_dashboard/page/ScreenWrapper.dart';
 import 'package:responsive_dashboard/page/OnBoardingScreen.dart';
 import 'package:responsive_dashboard/page/Setup/Add%20Zone.dart';
+
+import 'component/DataTable.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,7 +24,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'H-Kanisa',
       theme: ThemeData(
-          primarySwatch: Colors.blue,
+
           scaffoldBackgroundColor: Color.fromARGB(255, 255, 255, 255)),
       home: Dashboard(),
     );

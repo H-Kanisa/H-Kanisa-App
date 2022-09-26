@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:responsive_dashboard/config/responsive.dart';
-import 'package:responsive_dashboard/config/size_config.dart';
+import 'package:responsive_dashboard/component/config/size_config.dart';
+import '../Welcome/responsive/responsive.dart';
 import '../pallete.dart';
 import 'package:responsive_dashboard/style/style.dart';
 

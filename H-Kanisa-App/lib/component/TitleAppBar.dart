@@ -36,7 +36,7 @@ Widget FormTitle({
         ),
         
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: 15).add(EdgeInsets.only(top: 20)),
+          padding: const EdgeInsets.symmetric(vertical: 2).add(EdgeInsets.only(top: 20)),
           child: Text(
             title,
             textAlign: TextAlign.center,

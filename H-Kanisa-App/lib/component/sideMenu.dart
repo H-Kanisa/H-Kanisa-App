@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:responsive_dashboard/config/size_config.dart';
 import 'package:responsive_dashboard/style/colors.dart';
+
+import 'config/size_config.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({
