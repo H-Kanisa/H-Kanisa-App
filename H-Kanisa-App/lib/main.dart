@@ -24,9 +24,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'H-Kanisa',
       theme: ThemeData(
-          primarySwatch: Colors.blue,
+
           scaffoldBackgroundColor: Color.fromARGB(255, 255, 255, 255)),
-      home: DataViewComponent(),
+      home: Dashboard(),
     );
   }
 }

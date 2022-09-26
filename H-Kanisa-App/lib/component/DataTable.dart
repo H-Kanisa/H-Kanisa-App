@@ -127,7 +127,7 @@ class _DataViewComponentState extends State<DataViewComponent> {
             ),
             Expanded(
 
-                  child: Center(
+
                     child: _foundUsers.isNotEmpty
                         ? ListView.builder(
                       itemCount: _foundUsers.length,
@@ -167,7 +167,7 @@ class _DataViewComponentState extends State<DataViewComponent> {
                       style: TextStyle(fontSize: 24),
                     ),
                   ),
-            ),
+
           ],
         ),
       ),

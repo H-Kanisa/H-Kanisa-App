@@ -6,6 +6,7 @@ import 'package:responsive_dashboard/page/Common_Items/DataSheet_master.dart';
 import 'package:responsive_dashboard/pallete.dart';
 
 import '../../component/DataTable.dart';
+import '../../component/NavBar.dart';
 
 Widget build(BuildContext context) => MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -92,7 +93,9 @@ class TestComponents extends StatelessWidget {
             )),
           ),
         ]),
+        bottomNavigationBar: NavBar(),
       ),
+
     );
   }
 }

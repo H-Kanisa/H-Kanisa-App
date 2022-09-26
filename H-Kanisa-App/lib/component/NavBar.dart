@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:responsive_dashboard/Log-in/pallete.dart';
 import 'package:responsive_dashboard/ManageUser.dart';
 import 'package:responsive_dashboard/dashboard.dart';
+import 'package:responsive_dashboard/page/Common_Items/Test%20Components.dart';
+import 'package:responsive_dashboard/page/Common_Items_Page.dart';
 import 'package:responsive_dashboard/page/People.dart';
 
 class NavBar extends StatefulWidget {
@@ -39,6 +41,9 @@ class NavBarState extends State<NavBar> {
               setState(() {
                 currentIndex = index;
                 HapticFeedback.lightImpact();
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => listOfPages[index],
+                ));
               });
             },
             splashColor: Colors.transparent,
@@ -59,14 +64,16 @@ class NavBarState extends State<NavBar> {
                     width: index == currentIndex ? displayWidth * .32 : 0,
                     decoration: BoxDecoration(
                       color: index == currentIndex
-                          ? AppColor.greenHK.withOpacity(.2)
+                          ? AppColor.greenHK.withOpacity(.1)
                           : Colors.transparent,
                       borderRadius: BorderRadius.circular(50),
                     ),
                   ),
                 ),
                 GestureDetector(
-                  //onTap: Pages,
+                  onTap:  () {  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => listOfPages[index],
+                  ));},
                   child: AnimatedContainer(
                     duration: Duration(seconds: 1),
                     curve: Curves.fastLinearToSlowEaseIn,
@@ -103,6 +110,7 @@ class NavBarState extends State<NavBar> {
                           ],
                         ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             AnimatedContainer(
                               duration: Duration(seconds: 1),
@@ -110,13 +118,28 @@ class NavBarState extends State<NavBar> {
                               width:
                                   index == currentIndex ? displayWidth * .03 : 20,
                             ),
-                            Icon(
+                              IconButton (
+                                  padding: EdgeInsets.all(0),
+                            icon: Icon(
                               listOfIcons[index],
-
                               size: displayWidth * .076,
                               color: index == currentIndex
                                   ? AppColor.greenHK
                                   : AppColor.midGreyHk,
+                            ),
+                              onPressed: () {
+                              /*
+                              Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => People(),
+                              ));*/
+
+                                    Navigator.of(context).push(MaterialPageRoute(
+                                      builder: (context) => listOfPages[index],
+                                    ));
+
+
+
+                              }
                             ),
                           ],
                         ),
@@ -138,6 +161,14 @@ class NavBarState extends State<NavBar> {
     Icons.settings_rounded,
   ];
 
+  List listOfPages = [
+    Dashboard(),
+    People(),
+    manageUsers(),
+    TestComponents()
+  ];
+
+
   List<String> listOfStrings = [
     'Home',
     'Favorite',
@@ -145,11 +176,8 @@ class NavBarState extends State<NavBar> {
     'Settings',
 
   ];
-  List<String> Pages = [
-    'Home',
-    'Favorite',
-    'Account',
-    'Settings',
+  List<int> index = [
+    0,1,2,3
 
   ];
   void selectedItem(BuildContext context, int index) {
@@ -185,3 +213,4 @@ class NavBarState extends State<NavBar> {
 
 
 }
+
