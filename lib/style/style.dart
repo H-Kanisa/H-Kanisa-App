@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/style/colors.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
 
 class PrimaryText extends StatelessWidget {
   final double size;
@@ -11,7 +11,7 @@ class PrimaryText extends StatelessWidget {
   const PrimaryText({
     this.text,
     this.fontWeight: FontWeight.w400,
-    this.color: AppColors.primary,
+    this.color: AppColor.greyHK,
     this.size: 20,
     this.height: 1.3,
   });

@@ -1,10 +1,10 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/ManageUser.dart';
+import 'package:responsive_dashboard/page/Dashboard/ManageUser.dart';
 import 'package:responsive_dashboard/dashboard.dart';
-import 'package:responsive_dashboard/page/DashboardCards/People.dart';
-import 'package:responsive_dashboard/style/colors.dart';
-import '../pallete.dart';
+import 'package:responsive_dashboard/page/Dashboard/People.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
+import '../style/pallete.dart';
 
 void main() {
   runApp(ScreenWrapper());
@@ -72,12 +72,12 @@ class _HomePageState extends State<HomePage> {
             icon: pageIndex == 0
                 ? const Icon(
                     FluentSystemIcons.ic_fluent_person_filled,
-                    color: AppColors.greenHK,
+                    color: AppColor.greenHK,
                     size: 38,
                   )
                 : const Icon(
                     FluentSystemIcons.ic_fluent_person_regular,
-                    color: AppColors.midGreyHk,
+                    color: AppColor.midGreyHk,
                     size: 30,
                   ),
           ),
@@ -91,12 +91,12 @@ class _HomePageState extends State<HomePage> {
             icon: pageIndex == 1
                 ? const Icon(
                     FluentSystemIcons.ic_fluent_home_filled,
-                    color: AppColors.greenHK,
+                    color: AppColor.greenHK,
                     size: 38,
                   )
                 : const Icon(
                     FluentSystemIcons.ic_fluent_home_regular,
-                    color: AppColors.midGreyHk,
+                    color: AppColor.midGreyHk,
                     size: 30,
                   ),
           ),
@@ -110,12 +110,12 @@ class _HomePageState extends State<HomePage> {
             icon: pageIndex == 2
                 ? const Icon(
                     FluentSystemIcons.ic_fluent_apps_list_filled,
-                    color: AppColors.greenHK,
+                    color: AppColor.greenHK,
                     size: 38,
                   )
                 : const Icon(
                     FluentSystemIcons.ic_fluent_apps_list_regular,
-                    color: AppColors.midGreyHk,
+                    color: AppColor.midGreyHk,
                     size: 30,
                   ),
           ),

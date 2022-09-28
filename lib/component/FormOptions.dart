@@ -1,9 +1,9 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/style/colors.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
 
-import '../ManageUser.dart';
-import '../pallete.dart';
+import '../page/Dashboard/ManageUser.dart';
+import '../style/pallete.dart';
 
 abstract class formDropDown extends StatelessWidget {
   @override

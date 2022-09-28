@@ -4,7 +4,7 @@ import 'package:responsive_dashboard/dashboard.dart';
 import 'package:responsive_dashboard/main.dart';
 import 'package:responsive_dashboard/page/Common_Items/DataSheet_master.dart';
 import 'package:responsive_dashboard/page/Common_Items_Page.dart';
-import 'package:responsive_dashboard/pallete.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
 
 import '../../component/CustomAppBar.dart';
 import '../../component/ListBuilder.dart';

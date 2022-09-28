@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../pallete.dart';
+import '../style/pallete.dart';
 
 abstract class formText extends StatelessWidget {
   @override

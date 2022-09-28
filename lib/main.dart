@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/component/navigatormenu.dart';
-import 'package:responsive_dashboard/page/DashboardCards/People.dart';
+import 'package:responsive_dashboard/page/Dashboard/People.dart';
 
 void main() {
   runApp(MyApp());

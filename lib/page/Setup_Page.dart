@@ -10,7 +10,7 @@ import 'package:responsive_dashboard/page/Setup/Add%20Service%20Type.dart';
 import 'package:responsive_dashboard/page/Setup/Add%20Zone.dart';
 import 'package:responsive_dashboard/page/Setup/Manage%20Access%20Views.dart';
 
-import 'package:responsive_dashboard/pallete.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
 
 import '../component/navigatormenu.dart';
 import '../dashboard.dart';

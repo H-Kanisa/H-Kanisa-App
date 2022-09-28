@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:responsive_dashboard/component/sensorCollapsible.dart';
 import 'package:responsive_dashboard/component/sensorCollapsible.dart';
 import 'package:responsive_dashboard/main.dart';
-import 'package:responsive_dashboard/pallete.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
 
 class SenserCollapsible extends ChangeNotifier {
   bool _isCollapsed = false;

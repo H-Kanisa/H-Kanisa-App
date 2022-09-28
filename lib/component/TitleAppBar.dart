@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/page/home-screen.dart';
 
-import '../pallete.dart';
+import '../style/pallete.dart';
 
 abstract class formTitle extends StatelessWidget {
   @override

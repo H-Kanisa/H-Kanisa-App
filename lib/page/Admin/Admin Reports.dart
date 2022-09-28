@@ -13,7 +13,7 @@ import 'package:responsive_dashboard/page/Admin/Admin%20Reports/Manage%20Cell%20
 import 'package:responsive_dashboard/page/Admin/Admin%20Reports/Manage%20Dpt%20Reports.dart';
 import 'package:responsive_dashboard/page/Common_Items/DataSheet_master.dart';
 import 'package:responsive_dashboard/page/Setup_Page.dart';
-import 'package:responsive_dashboard/pallete.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
 
 import '../../../component/CustomAppBar.dart';
 import '../../../component/ListBuilder.dart';

@@ -5,7 +5,7 @@ import 'package:responsive_dashboard/page/Admin.dart';
 import 'package:responsive_dashboard/page/Admin/Adjust%20Reports/Gen%20Cell%20Attendance.dart';
 import 'package:responsive_dashboard/page/Common_Items/DataSheet_master.dart';
 import 'package:responsive_dashboard/page/Setup_Page.dart';
-import 'package:responsive_dashboard/pallete.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
 
 import '../../../component/CustomAppBar.dart';
 import '../../../component/ListBuilder.dart';

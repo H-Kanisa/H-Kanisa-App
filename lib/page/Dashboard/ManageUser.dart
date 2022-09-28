@@ -8,8 +8,8 @@ import 'package:responsive_dashboard/component/FormText.dart';
 import 'package:responsive_dashboard/component/List.dart';
 import 'package:responsive_dashboard/dashboard.dart';
 
-import '../../../component/FormOptions.dart';
-import '../../../component/TitleAppBar.dart';
+import '../../../../../component/FormOptions.dart';
+import '../../../../../component/TitleAppBar.dart';
 
 //import '../pallete.dart';
 

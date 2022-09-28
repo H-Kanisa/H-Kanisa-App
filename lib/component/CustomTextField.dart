@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../pallete.dart';
+import '../style/pallete.dart';
 import 'navigatormenu.dart';
 
 class inputText extends StatelessWidget {

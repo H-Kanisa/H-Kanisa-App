@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-import '../pallete.dart';
+import '../style/pallete.dart';
 
 class DatePicker extends StatefulWidget {
   @override

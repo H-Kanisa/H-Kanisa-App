@@ -1,12 +1,12 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/ManageUser.dart';
+import 'package:responsive_dashboard/page/Dashboard/ManageUser.dart';
 import 'package:responsive_dashboard/component/ActionCards.dart';
 
 import 'package:responsive_dashboard/page/Common_Items/DataSheet%20Master/View%20Members.dart';
 import 'package:responsive_dashboard/page/Common_Items/DataSheet%20Master/Visitation.dart';
 import 'package:responsive_dashboard/page/Common_Items/Visitation%20Report.dart';
-import 'package:responsive_dashboard/pallete.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
 import 'package:responsive_dashboard/component/NavBar.dart';
 import 'package:responsive_dashboard/component/appBarActionItems.dart';
 import 'package:responsive_dashboard/component/header.dart';

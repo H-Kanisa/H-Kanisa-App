@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/dashboard.dart';
-import 'package:responsive_dashboard/pallete.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
 import 'package:responsive_dashboard/page/Common_Items_Page.dart';
 import 'package:responsive_dashboard/page/Admin.dart';
 import 'package:responsive_dashboard/page/Setup_Page.dart';

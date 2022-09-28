@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import '../pallete.dart';
+import '../style/pallete.dart';
 
 abstract class formBirthday extends StatelessWidget {
   @override

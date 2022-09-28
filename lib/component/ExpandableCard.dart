@@ -1,6 +1,6 @@
 import 'package:expansion_card/expansion_card.dart';
 import 'package:flutter/material.dart';
-import '../pallete.dart';
+import '../style/pallete.dart';
 
 class expandableCard extends StatelessWidget {
   @override

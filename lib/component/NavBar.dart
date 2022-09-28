@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:responsive_dashboard/Log-in/pallete.dart';
-import 'package:responsive_dashboard/ManageUser.dart';
+import 'package:responsive_dashboard/page/Dashboard/ManageUser.dart';
 import 'package:responsive_dashboard/dashboard.dart';
 import 'package:responsive_dashboard/page/Common_Items/Test%20Components.dart';
-import 'package:responsive_dashboard/page/People.dart';
-
+import 'package:responsive_dashboard/page/Dashboard/People.dart';
 class NavBar extends StatefulWidget {
   @override
   NavBarState createState() => NavBarState();
@@ -63,7 +62,7 @@ class NavBarState extends State<NavBar> {
                     width: index == currentIndex ? displayWidth * .32 : 0,
                     decoration: BoxDecoration(
                       color: index == currentIndex
-                          ? AppColor.greenHK.withOpacity(.1)
+                          ? AppColor.blueHK.withOpacity(.1)
                           : Colors.transparent,
                       borderRadius: BorderRadius.circular(50),
                     ),
@@ -99,7 +98,7 @@ class NavBarState extends State<NavBar> {
                                     ? '${listOfStrings[index]}'
                                     : '',
                                 style: TextStyle(
-                                  color: AppColor.greenHK,
+                                  color: AppColor.blueHK,
                                   fontFamily: "Poppins",
                                   fontWeight: FontWeight.w600,
                                   fontSize: 15,
@@ -123,7 +122,7 @@ class NavBarState extends State<NavBar> {
                               listOfIcons[index],
                               size: displayWidth * .076,
                               color: index == currentIndex
-                                  ? AppColor.greenHK
+                                  ? AppColor.blueHK
                                   : AppColor.midGreyHk,
                             ),
                               onPressed: () {

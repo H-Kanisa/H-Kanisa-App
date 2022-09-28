@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/component/ListBuilder.dart';
 import 'package:responsive_dashboard/component/CustomAppBar.dart';
-import 'package:responsive_dashboard/pallete.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
 import '../component/navigatormenu.dart';
 import '../dashboard.dart';
 import 'Admin/Adjust Reports.dart';

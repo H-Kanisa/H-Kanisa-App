@@ -1,11 +1,11 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 
-import 'package:responsive_dashboard/ManageUser.dart';
+import 'package:responsive_dashboard/page/Dashboard/ManageUser.dart';
 import 'package:responsive_dashboard/dashboard.dart';
-import 'package:responsive_dashboard/page/DashboardCards/People.dart';
+import 'package:responsive_dashboard/page/Dashboard/People.dart';
 
-import '../pallete.dart';
+import '../style/pallete.dart';
 
 class bottomNav extends StatefulWidget {
   @override

@@ -6,7 +6,7 @@ import 'package:responsive_dashboard/Log-in/signup_screen.dart';
 import 'package:responsive_dashboard/component/CustomAppBar.dart';
 import 'package:responsive_dashboard/component/navigatormenu.dart';
 import 'package:responsive_dashboard/page/OnBoardingScreen.dart';
-import 'package:responsive_dashboard/pallete.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
 import 'package:responsive_dashboard/dashboard.dart';
 
 import '../component/BottomNavigationBar.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_core/theme.dart';
-import '../pallete.dart';
+import '../style/pallete.dart';
 
 abstract class viewDetails extends StatelessWidget {
   @override

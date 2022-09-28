@@ -1,6 +1,6 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/pallete.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
 import 'package:responsive_dashboard/component/NavBar.dart';
 import 'package:responsive_dashboard/component/appBarActionItems.dart';
 import 'package:responsive_dashboard/component/header.dart';
@@ -10,8 +10,7 @@ import 'package:responsive_dashboard/page/Common_Items/DataSheet%20Master/Regist
 import 'package:responsive_dashboard/page/Setup/Add%20Cell%20Group.dart';
 import 'package:responsive_dashboard/page/Setup/Add%20Church.dart';
 import 'package:responsive_dashboard/page/Setup/Add%20Zone.dart';
-
-import 'Welcome/responsive/responsive.dart';
+import 'component/config/responsive.dart';
 import 'component/config/size_config.dart';
 
 class Dashboard extends StatelessWidget {

@@ -34,4 +34,6 @@ class AppColor {
   static const Color offWhiteHK = Color.fromARGB(255, 189, 189, 189);
   static const Color midGreyHk = Color(0xFF808080);
   static const Color scaffoldColor = Color.fromARGB(126, 220, 220, 220);
+
+
 }
