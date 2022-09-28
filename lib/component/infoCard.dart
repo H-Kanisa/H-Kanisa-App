@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:responsive_dashboard/config/responsive.dart';
-import 'package:responsive_dashboard/config/size_config.dart';
-import 'package:responsive_dashboard/style/colors.dart';
+import 'package:responsive_dashboard/component/config/size_config.dart';
+import '../Welcome/responsive/responsive.dart';
+import '../pallete.dart';
 import 'package:responsive_dashboard/style/style.dart';
 
 class InfoCard extends StatelessWidget {
   final String image;
   final String label;
   final String number;
+  final Color cardColor;
   VoidCallback onClicked;
 
-  InfoCard({this.image, this.label, this.number, this.onClicked});
+  InfoCard(
+      {this.image, this.label, this.number, this.onClicked, this.cardColor});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class InfoCard extends StatelessWidget {
           right: Responsive.isMobile(context) ? 20 : 40),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: AppColors.white,
+        color: AppColor.scaffoldColor,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -36,7 +38,7 @@ class InfoCard extends StatelessWidget {
           SizedBox(
             height: SizeConfig.blockSizeVertical * 2,
           ),
-          PrimaryText(text: label, color: AppColors.greyHK, size: 16),
+          PrimaryText(text: label, color: AppColor.greyHK, size: 16),
           SizedBox(
             height: SizeConfig.blockSizeVertical * 2,
           ),
@@ -47,7 +49,6 @@ class InfoCard extends StatelessWidget {
           )
         ],
       ),
-      
     );
   }
 }

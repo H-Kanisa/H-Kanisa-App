@@ -13,6 +13,7 @@ class PickChild extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Container(
@@ -34,7 +35,6 @@ class PickChild extends StatelessWidget {
                       text: "First Name",
                     ),
                     FormText(text: "Second Name"),
-                    FormText(text: "Middle Name"),
                     FormText(text: "Last Name"),
                     FormText(text: "Phone Number"),
                     FormBirthday(text: "Birthday"),
@@ -43,11 +43,7 @@ class PickChild extends StatelessWidget {
                     FormDropDown(text: "Church", list: church),
                     FormDropDown(text: "Branch", list: branch),
                     FormText(text: "Location"),
-                    FormButton(text:"Submit",action: (){
-                      Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => DataSheet(),
-                      ));
-                    } )
+
                   ],
                 ),
               )

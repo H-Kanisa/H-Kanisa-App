@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/config/responsive.dart';
-import 'package:responsive_dashboard/style/colors.dart';
+import '../Welcome/responsive/responsive.dart';
+import '../pallete.dart';
 import 'package:responsive_dashboard/style/style.dart';
 
 class Header extends StatelessWidget {
@@ -17,12 +17,15 @@ class Header extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               PrimaryText(
-                  text: 'Dashboard', size: 25, fontWeight: FontWeight.w800),
+                  text: 'Dashboard',
+                  size: 25,
+                  fontWeight: FontWeight.w800,
+                  color: AppColor.greyHK),
               PrimaryText(
                 text: 'HFC\nHead Quarters',
                 size: 16,
                 fontWeight: FontWeight.w300,
-                color: AppColors.greyHK,
+                color: AppColor.greyHK,
               )
             ]),
       ),
@@ -34,20 +37,23 @@ class Header extends StatelessWidget {
         child: TextField(
           decoration: InputDecoration(
               filled: true,
-              fillColor: AppColors.white,
+              fillColor: AppColor.redSubtleHK,
               contentPadding: EdgeInsets.only(left: 40.0, right: 5),
               enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(30),
-                borderSide: BorderSide(color: AppColors.white),
+                borderRadius: BorderRadius.circular(25),
+                borderSide: BorderSide(color: AppColor.whiteHK),
               ),
               focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(30),
-                borderSide: BorderSide(color: AppColors.white),
+                borderRadius: BorderRadius.circular(25),
+                borderSide: BorderSide(color: AppColor.whiteHK),
               ),
-              prefixIcon: Icon(Icons.search, color: AppColors.redHK),
+              prefixIcon: Padding(
+                padding: const EdgeInsets.only(left: 10.0),
+                child: Icon(Icons.search, color: AppColor.redHK),
+              ),
               hintText: 'Search',
               hintStyle: TextStyle(
-                  color: AppColors.redHK,
+                  color: AppColor.redHK,
                   fontFamily: "Poppins",
                   fontWeight: FontWeight.w300,
                   fontSize: 14)),

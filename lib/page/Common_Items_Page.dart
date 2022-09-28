@@ -9,10 +9,12 @@ import 'package:responsive_dashboard/page/OnBoardingScreen.dart';
 import 'package:responsive_dashboard/pallete.dart';
 import 'package:responsive_dashboard/dashboard.dart';
 
+import '../component/BottomNavigationBar.dart';
 import '../component/ListBuilder.dart';
 import 'Common_Items/Attendance Report.dart';
 import 'Common_Items/Attendance.dart';
 import 'Common_Items/DataSheet_master.dart';
+import 'Common_Items/Test Components.dart';
 import 'Common_Items/Visitation Report.dart';
 
 Widget build(BuildContext context) {
@@ -51,7 +53,7 @@ class StartState extends State<Common_Items> {
             title: "Data Sheet Master",
             desc: "Brief Description",
             onClicked: () => Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => DataSheet(),
+                builder: (context) => DataSheet(),
             )),
           ),
           BuildList(
@@ -78,6 +80,15 @@ class StartState extends State<Common_Items> {
               builder: (context) => visitationReport(),
             )),
           ),
-        ]));
+          BuildList(
+            icon: Icons.person_pin_circle,
+            title: "Test Components",
+            desc: "Brief Description",
+            onClicked: () => Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => TestComponents(),
+            )),
+          ),
+        ]),
+        bottomNavigationBar: BottomNav());
   }
 }

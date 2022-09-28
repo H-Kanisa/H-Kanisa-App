@@ -23,26 +23,24 @@ Widget FormButton({
   List list,
   VoidCallback action,
 }) {
-  return Padding(
-    padding: const EdgeInsets.all(8.0).add(EdgeInsets.only(bottom: 20)),
-    child: Container(
-        child: ElevatedButton(
-          style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.resolveWith<Color>(
-                  (Set<MaterialState> states) {
-                if (states.contains(MaterialState.pressed))
-                  return AppColors.greenHK;
-                return null; // Use the component's default.
-              },
+  return Container(
+    child: Center(
+      child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+           OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              backgroundColor: Colors.black,
+              primary: Colors.amberAccent, //<-- SEE HERE
             ),
+            onPressed: () {},
+            child: Text(text,style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 14,
+                color: AppColor.whiteHK,
+                fontWeight: FontWeight.w700),),
           ),
-
-      child: Text(text,style: TextStyle(
-          fontFamily: 'Poppins',
-          fontSize: 14,
-          color: AppColor.whiteHK,
-          fontWeight: FontWeight.w300),),
-      onPressed: action,
-    )),
+      ]),
+    )
   );
 }
