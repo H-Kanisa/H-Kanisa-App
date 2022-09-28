@@ -18,7 +18,7 @@ Widget FormTitle({
   IconData icon,
   VoidCallback onClicked,
 }) {
-<<<<<<< Updated upstream
+
   return Padding(
     padding: const EdgeInsets.only(top: 20),
     child: Column(
@@ -46,7 +46,6 @@ Widget FormTitle({
                 color: AppColor.greyHK,
                 fontFamily: "Poppins",
                 fontWeight: FontWeight.w600),
-=======
   return Align(
     alignment: Alignment.topLeft,
     child: Padding(
