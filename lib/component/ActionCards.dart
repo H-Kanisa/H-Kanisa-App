@@ -38,10 +38,10 @@ class ActionCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(image, width: 80),
-
             PrimaryText(
               text: title,
               size: 18,
+              color: AppColor.blueHK,
               fontWeight: FontWeight.w700,
             )
           ],

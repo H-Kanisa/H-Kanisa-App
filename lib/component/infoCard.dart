@@ -49,6 +49,7 @@ class InfoCard extends StatelessWidget {
             PrimaryText(
               text: number,
               size: 30,
+              color: AppColor.blueHK,
               fontWeight: FontWeight.w700,
             ),
           ],
