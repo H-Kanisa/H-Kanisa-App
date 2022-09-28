@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/ManageUser.dart';
 import 'package:responsive_dashboard/style/colors.dart';
 
 class AppBarActionItems extends StatelessWidget {
@@ -17,7 +18,9 @@ class AppBarActionItems extends StatelessWidget {
         SizedBox(width: 8),
         IconButton(
             icon: Icon(Icons.account_circle_rounded, size: 27, color: AppColors.greenHK),
-            onPressed: () {}),
+            onPressed: () {Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => manageUsers(),
+            ));}),
         SizedBox(width: 10),
       ],
     );

@@ -44,3 +44,5 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+H-Kanisa-App/lib/Welcome/components/background.dart
+H-Kanisa-App/lib/Welcome/components/already_have_an_account_acheck.dart

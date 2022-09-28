@@ -2,7 +2,7 @@ import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/ManageUser.dart';
 import 'package:responsive_dashboard/dashboard.dart';
-import 'package:responsive_dashboard/page/People.dart';
+import 'package:responsive_dashboard/page/DashboardCards/People.dart';
 import 'package:responsive_dashboard/style/colors.dart';
 import '../pallete.dart';
 

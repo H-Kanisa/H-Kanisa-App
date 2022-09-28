@@ -34,7 +34,7 @@ Widget FormTitle({
               icon: Icon(Icons.arrow_back, color: AppColor.greyHK, size: 32),
               onPressed: onClicked),
         ),
-        
+
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 2).add(EdgeInsets.only(top: 20)),
           child: Text(
@@ -59,12 +59,12 @@ Widget PageTitle({
 }) {
   return AppBar(
       title: Text(
-    title,
-    textAlign: TextAlign.center,
-    style: TextStyle(
-        fontSize: 30,
-        color: AppColor.greyHK,
-        fontFamily: "Poppins",
-        fontWeight: FontWeight.w600),
-  ));
+        title,
+        textAlign: TextAlign.center,
+        style: TextStyle(
+            fontSize: 30,
+            color: AppColor.greyHK,
+            fontFamily: "Poppins",
+            fontWeight: FontWeight.w600),
+      ));
 }

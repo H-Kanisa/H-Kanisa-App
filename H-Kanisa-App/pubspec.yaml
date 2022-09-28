@@ -71,6 +71,10 @@ flutter:
     - assets/white.png
     - assets/H.png
     - assets/Kanisa.png
+    - assets/AddMember.png
+    - assets/ViewMembers.png
+    - assets/Visitation.png
+    - assets/ManageUsers.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -106,7 +106,7 @@ Widget FormDropDown({
   //Do something when changing the item if you want.
   },
   onSaved: (value) {
-  selectedValue = value.toString();
+  var selectedValue = value.toString();
   },
   ),
   Padding(padding: EdgeInsets.symmetric(vertical: 7))
