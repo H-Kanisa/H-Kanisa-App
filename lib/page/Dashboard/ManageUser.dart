@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/component/CustomButton.dart';
+import 'package:responsive_dashboard/component/form/CustomButton.dart';
 import 'package:responsive_dashboard/component/Form/FormBirthday.dart';
 import 'package:responsive_dashboard/component/Form/FormText.dart';
 import 'package:responsive_dashboard/component/constants/List.dart';

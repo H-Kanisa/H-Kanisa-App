@@ -1,12 +1,13 @@
 // main.dart
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/Log-in/pallete.dart';
+import 'package:responsive_dashboard/page/Common_Items/DataSheet%20Master/Register%20Member.dart';
 import 'package:responsive_dashboard/page/Common_Items/Test%20Components.dart';
+import 'package:responsive_dashboard/page/Setup/Add%20Church.dart';
 
+import '../../../component/form/CustomButton.dart';
 import '../../../component/Form/FormTitle.dart';
 import 'View MemberDetails.dart';
-
-
 
 void main() {
   runApp(const MyApp());
@@ -66,7 +67,7 @@ class _viewMembersState extends State<viewMembers> {
     } else {
       results = _allUsers
           .where((user) =>
-          user["name"].toLowerCase().contains(enteredKeyword.toLowerCase()))
+              user["name"].toLowerCase().contains(enteredKeyword.toLowerCase()))
           .toList();
       // we use the toLowerCase() method to make it case-insensitive
     }
@@ -82,7 +83,7 @@ class _viewMembersState extends State<viewMembers> {
     return Scaffold(
       body: Padding(
         padding:
-        const EdgeInsets.all(10).add(EdgeInsets.symmetric(horizontal: 15)),
+            const EdgeInsets.all(10).add(EdgeInsets.symmetric(horizontal: 15)),
         child: Column(
           children: [
             Container(
@@ -128,50 +129,287 @@ class _viewMembersState extends State<viewMembers> {
             Expanded(
               child: _foundUsers.isNotEmpty
                   ? ListView.builder(
-                itemCount: _foundUsers.length,
-                itemBuilder: (context, index) => Container(
-                  child: Card(
-                    key: ValueKey(_foundUsers[index]["id"]),
-                    color: AppColor.whiteHK,
-                    elevation: 1,
-                    margin: const EdgeInsets.symmetric(vertical: 2),
-                    child: ListTile(
-                      leading: Text(
-                        _foundUsers[index]["id"].toString(),
-                        style: const TextStyle(
-                            color: AppColor.redHK,
-                            fontFamily: "Poppins",
-                            fontWeight: FontWeight.w500,
-                            fontSize: 17),
+                      itemCount: _foundUsers.length,
+                      itemBuilder: (context, index) => Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 2.0),
+                        child: PhysicalModel(
+                          clipBehavior: Clip.none,
+                          color: AppColor.lightGreyHk,
+                          borderRadius: BorderRadius.circular(15),
+                          child: ListTile(
+                            key: ValueKey(_foundUsers[index]["id"]),
+                            title: ExpansionTile(
+                              leading: Transform.translate(
+                                offset: Offset(-8, 2),
+                                child: Text(
+                                  _foundUsers[index]["id"].toString(),
+                                  style: const TextStyle(
+                                      color: AppColor.redHK,
+                                      fontFamily: "Poppins",
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 17),
+                                ),
+                              ),
+                              title: Transform.translate(
+                                offset: Offset(-30, -4),
+                                child: Text(
+                                  _foundUsers[index]['name'],
+                                  style: TextStyle(
+                                      color: AppColor.greyHK,
+                                      fontFamily: "Poppins",
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 14),
+                                ),
+                              ),
+                              /*
+                        onTap: () =>
+                              Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => viewMembersDetails(),
+                              )),
+                        */
+                              subtitle: Transform.translate(
+                                  offset: Offset(-30, 0),
+                                  child: Text(
+                                    '${_foundUsers[index]["age"].toString()} years old',
+                                    style: TextStyle(
+                                        color: AppColor.greyHK,
+                                        fontFamily: "Poppins",
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 12),
+                                  )),
+                              children: <Widget>[
+                                ListTile(
+                                    title: Padding(
+                                      padding: const EdgeInsets.all(2.0).add(
+                                          EdgeInsets.symmetric(horizontal: 18)),
+                                      child: Column(
+                                        verticalDirection:
+                                            VerticalDirection.down,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Align(
+                                            alignment: Alignment.topLeft,
+                                            child: Column(
+                                              children: [
+                                                Row(
+                                                  children: [
+                                                    Text(
+                                                      'Name: ',
+                                                      style: TextStyle(
+                                                          color:
+                                                              AppColor.greyHK,
+                                                          fontFamily: "Poppins",
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontSize: 12),
+                                                    ),
+                                                    Text(
+                                                      _foundUsers[index]
+                                                          ['name'],
+                                                      style: TextStyle(
+                                                          color:
+                                                              AppColor.greyHK,
+                                                          fontFamily: "Poppins",
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                          fontSize: 12),
+                                                    )
+                                                  ],
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Text(
+                                                      'ID: ',
+                                                      style: TextStyle(
+                                                          color:
+                                                              AppColor.greyHK,
+                                                          fontFamily: "Poppins",
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontSize: 12),
+                                                    ),
+                                                    Text(
+                                                      _foundUsers[index]['id']
+                                                          .toString(),
+                                                      style: TextStyle(
+                                                          color:
+                                                              AppColor.greyHK,
+                                                          fontFamily: "Poppins",
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                          fontSize: 12),
+                                                    )
+                                                  ],
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Text(
+                                                      'Birthday: ',
+                                                      style: TextStyle(
+                                                          color:
+                                                              AppColor.greyHK,
+                                                          fontFamily: "Poppins",
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontSize: 12),
+                                                    ),
+                                                    Text(
+                                                      ' ${_foundUsers[index]['age']} years old',
+                                                      style: TextStyle(
+                                                          color:
+                                                              AppColor.greyHK,
+                                                          fontFamily: "Poppins",
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                          fontSize: 12),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    subtitle: Transform.translate(
+                                      offset: Offset(12, 0),
+                                      child: Row(
+                                        children: [
+                                          /*
+                                          InkWell(
+                                            splashColor: AppColor.redHK,
+                                            onTap: () => Navigator.of(context)
+                                                .push(MaterialPageRoute(
+                                              builder: (context) => addChurch(),
+                                            )),
+                                            child: IconButton(
+                                              icon: Icon(Icons.person),
+                                              color: AppColor.greyHK,
+                                              iconSize: 20,
+                                              constraints: BoxConstraints(),
+                                            ),
+                                          ),
+                                          InkWell(
+                                            splashColor: AppColor.redHK,
+                                            onTap: () => Navigator.of(context)
+                                                .push(MaterialPageRoute(
+                                              builder: (context) => addChurch(),
+                                            )),
+                                            child: IconButton(
+                                              icon: Icon(Icons.place),
+                                              color: AppColor.greyHK,
+                                              iconSize: 20,
+                                              constraints: BoxConstraints(),
+                                            ),
+                                          ),*/
+                                          Padding(
+                                            padding: const EdgeInsets.all(4.0),
+                                            child: PhysicalModel(
+                                                color: AppColor.blueSubtleHK,
+                                                borderRadius:
+                                                    BorderRadius.circular(15),
+                                                child: Padding(
+                                                  padding:
+                                                      const EdgeInsets.all(7.0),
+                                                  child: Row(
+                                                    children: [
+                                                      GestureDetector(
+                                                        onTap: () =>Navigator.of(context).push(MaterialPageRoute(
+                                                          builder: (context) => regMember(),
+                                                        )),
+                                                        child: Container(
+                                                            height: 11,
+                                                            width: 55,
+                                                            child: Center(
+                                                              child: Row(
+                                                                children: [
+                                                                  Icon(
+                                                                    Icons.person,
+                                                                    size: 15,
+                                                                    color: AppColor
+                                                                        .blueHK,
+                                                                  ),
+                                                                  Text(
+                                                                    'Profile',
+                                                                    style: TextStyle(
+                                                                        color: AppColor
+                                                                            .blueHK,
+                                                                        fontFamily:
+                                                                            "Poppins",
+                                                                        fontWeight:
+                                                                            FontWeight
+                                                                                .w700,
+                                                                        fontSize:
+                                                                            10),
+                                                                  ),
+                                                                ],
+                                                              ),
+                                                            )),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                )),
+                                          ),
+                                          PhysicalModel(
+                                              color: AppColor.redSubtleHK,
+                                              borderRadius:
+                                                  BorderRadius.circular(15),
+                                              child: Padding(
+                                                padding:
+                                                    const EdgeInsets.all(7.0),
+                                                child: Row(
+                                                  children: [
+                                                    GestureDetector(
+                                                      onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                                                builder: (context) => regMember(),
+                                              )),
+                                                      child: Container(
+
+                                                          height: 11,
+                                                          width: 65,
+                                                          child: Center(
+                                                            child: Row(
+                                                              children: [
+                                                                Icon(
+                                                                  Icons.place_rounded,
+                                                                  size: 15,
+                                                                  color: AppColor
+                                                                      .redHK,
+                                                                ),
+                                                                Text(
+                                                                  'Location',
+                                                                  style: TextStyle(
+                                                                      color: AppColor
+                                                                          .redHK,
+                                                                      fontFamily:
+                                                                          "Poppins",
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w700,
+                                                                      fontSize:
+                                                                          10),
+                                                                ),
+                                                              ],
+                                                            ),
+                                                          )),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ))
+                                        ],
+                                      ),
+                                    )),
+                              ],
+                            ),
+                          ),
+                        ),
                       ),
-                      title: Text(
-                        _foundUsers[index]['name'],
-                        style: TextStyle(
-                            color: AppColor.greyHK,
-                            fontFamily: "Poppins",
-                            fontWeight: FontWeight.w600,
-                            fontSize: 14),
-                      ),
-                      onTap: () =>
-                          Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => viewMembersDetails(),
-                          )),
-                      subtitle: Text(
-                        '${_foundUsers[index]["age"].toString()} years old',
-                        style: TextStyle(
-                            color: AppColor.greyHK,
-                            fontFamily: "Poppins",
-                            fontWeight: FontWeight.w400,
-                            fontSize: 13),
-                      ),
-                    ),
-                  ),
-                ),
-              )
+                    )
                   : const Text(
-                'No results found',
-                style: TextStyle(fontSize: 24),
-              ),
+                      'No results found',
+                      style: TextStyle(fontSize: 24),
+                    ),
             ),
           ],
         ),

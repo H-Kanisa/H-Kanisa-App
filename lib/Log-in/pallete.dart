@@ -29,7 +29,8 @@ class AppColor {
   static const Color redHK = Color(0xFFE9232A);
   static const Color lightGreyHk = Color(0xFFEAEAEA);
   static const Color greenSubtleHK = Color.fromARGB(27, 149, 193, 61);
-  static const Color blueSubtleHK = Color.fromRGBO(25, 63, 149, 1);
+  static const Color blueSubtleHK = Color.fromRGBO(
+      58, 63, 149, 0.09019607843137255);
   static const Color greySubtleHK = Color.fromRGBO(25, 51, 51, 1);
   static const Color redSubtleHK = Color.fromARGB(19, 233, 35, 42);
   static const Color offWhiteHK = Color.fromARGB(255, 189, 189, 189);
