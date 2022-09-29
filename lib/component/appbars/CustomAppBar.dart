@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../style/pallete.dart';
-import 'navigatormenu.dart';
+import '../../style/pallete.dart';
+import '../navigatormenu.dart';
 
 class customAppBar extends StatelessWidget {
   @override
@@ -20,7 +20,7 @@ Widget CustomAppBar({
   return AppBar(
       backgroundColor: Colors.transparent,
       leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new_rounded, color: AppColor.redHK),
+          icon: Icon(Icons.arrow_back_ios_new_rounded, color: AppColor.greenHK),
           onPressed: onClickedHome),
       actions: [
         IconButton(

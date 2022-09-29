@@ -9,7 +9,6 @@ class StepProgressView extends StatelessWidget {
   final Color _activeColor;
   final Color _inactiveColor = Colors.grey[100];
   final double lineWidth = 4.0;
-  
 
   StepProgressView(
       {Key key,

@@ -32,7 +32,6 @@ class StartState extends State<SplashScreen> {
               child: Image.asset("assets/main-horizontal.png"),
               height: 300,
               width: 300,
-            
             ),
           )
         ],

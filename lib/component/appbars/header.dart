@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../style/pallete.dart';
+import '../../style/pallete.dart';
 import 'package:responsive_dashboard/style/style.dart';
 
-import 'config/responsive.dart';
+import '../config/responsive.dart';
 
 class Header extends StatelessWidget {
   const Header({

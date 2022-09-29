@@ -3,7 +3,7 @@ import 'package:responsive_dashboard/Log-in/signup_screen.dart';
 
 import 'package:responsive_dashboard/page/OnBoardingScreen.dart';
 import 'pallete.dart';
-import 'package:responsive_dashboard/dashboard.dart';
+import 'package:responsive_dashboard/page/dashboard.dart';
 
 class LoginScreen extends StatefulWidget {
   @override

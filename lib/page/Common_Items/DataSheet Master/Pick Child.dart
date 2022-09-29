@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/component/CustomButton.dart';
-import 'package:responsive_dashboard/component/FormBirthday.dart';
-import 'package:responsive_dashboard/component/FormText.dart';
-import 'package:responsive_dashboard/component/List.dart';
+import 'package:responsive_dashboard/component/Form/FormBirthday.dart';
+import 'package:responsive_dashboard/component/Form/FormText.dart';
+import 'package:responsive_dashboard/component/constants/List.dart';
 
-import '../../../component/FormOptions.dart';
-import '../../../component/TitleAppBar.dart';
+import '../../../component/Form/FormOptions.dart';
+import '../../../component/Form/FormTitle.dart';
 import '../DataSheet_master.dart';
 //import '../pallete.dart';
 
@@ -13,7 +13,6 @@ class PickChild extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Container(
@@ -38,12 +37,11 @@ class PickChild extends StatelessWidget {
                     FormText(text: "Last Name"),
                     FormText(text: "Phone Number"),
                     FormBirthday(text: "Birthday"),
-                    FormDropDown(text: "Cell",list: cell),
+                    FormDropDown(text: "Cell", list: cell),
                     FormDropDown(text: "Zone", list: zone),
                     FormDropDown(text: "Church", list: church),
                     FormDropDown(text: "Branch", list: branch),
                     FormText(text: "Location"),
-
                   ],
                 ),
               )

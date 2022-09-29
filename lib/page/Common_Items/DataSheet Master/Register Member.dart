@@ -1,11 +1,12 @@
-import 'package:flutter/material.dart';
+  import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/component/CustomButton.dart';
-import 'package:responsive_dashboard/component/FormBirthday.dart';
-import 'package:responsive_dashboard/component/FormText.dart';
-import 'package:responsive_dashboard/component/List.dart';
+import 'package:responsive_dashboard/component/Form/FormBirthday.dart';
+import 'package:responsive_dashboard/component/Form/FormText.dart';
+import 'package:responsive_dashboard/component/constants/List.dart';
+import 'package:responsive_dashboard/page/Common_Items/DataSheet%20Master/View%20Members.dart';
 
-import '../../../component/FormOptions.dart';
-import '../../../component/TitleAppBar.dart';
+import '../../../component/Form/FormOptions.dart';
+import '../../../component/Form/FormTitle.dart';
 import '../DataSheet_master.dart';
 //import '../pallete.dart';
 
@@ -38,16 +39,18 @@ class regMember extends StatelessWidget {
                     FormText(text: "Last Name"),
                     FormText(text: "Phone Number"),
                     FormBirthday(text: "Birthday"),
-                    FormDropDown(text: "Cell",list: cell),
+                    FormDropDown(text: "Cell", list: cell),
                     FormDropDown(text: "Zone", list: zone),
                     FormDropDown(text: "Church", list: church),
                     FormDropDown(text: "Branch", list: branch),
                     FormText(text: "Location"),
-                    FormButton(text:"Submit",action: (){
-                      Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => DataSheet(),
-                      ));
-                    } )
+                    FormButton(
+                        text: "Submit",
+                        action: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => viewMembers(),
+                          ));
+                        })
                   ],
                 ),
               )

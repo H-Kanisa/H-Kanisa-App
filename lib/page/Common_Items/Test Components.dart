@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/dashboard.dart';
+import 'package:responsive_dashboard/page/dashboard.dart';
 import 'package:responsive_dashboard/main.dart';
 import 'package:responsive_dashboard/page/Common_Items/DataSheet_master.dart';
 import 'package:responsive_dashboard/style/pallete.dart';
 
 import '../../component/DataTable.dart';
-import '../../component/NavBar.dart';
+import '../../component/appbars/NavBar.dart';
 
 Widget build(BuildContext context) => MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -95,7 +95,6 @@ class TestComponents extends StatelessWidget {
         ]),
         bottomNavigationBar: NavBar(),
       ),
-
     );
   }
 }

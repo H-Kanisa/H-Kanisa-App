@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/component/ListBuilder.dart';
-import 'package:responsive_dashboard/component/CustomAppBar.dart';
+import 'package:responsive_dashboard/component/listview/ListBuilder.dart';
+import 'package:responsive_dashboard/component/appbars/CustomAppBar.dart';
 import 'package:responsive_dashboard/style/pallete.dart';
 import '../component/navigatormenu.dart';
-import '../dashboard.dart';
+import 'dashboard.dart';
 import 'Admin/Adjust Reports.dart';
 import 'Admin/Admin Reports.dart';
 import 'Admin/Admin Reports/Manage Cell Reports.dart';

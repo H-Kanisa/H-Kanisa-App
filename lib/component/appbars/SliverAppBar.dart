@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../style/pallete.dart';
-import 'navigatormenu.dart';
+import '../../style/pallete.dart';
+import '../navigatormenu.dart';
 
 class customAppBar extends StatelessWidget {
   @override
@@ -13,7 +12,7 @@ class customAppBar extends StatelessWidget {
   }
 }
 
-Widget MinAppBar({
+Widget CustomAppBar({
   String title,
   VoidCallback onClickedBack,
   VoidCallback onClickedHome,

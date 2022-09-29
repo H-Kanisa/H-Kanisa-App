@@ -27,12 +27,11 @@ final List<String> branch = [
   'Naivasha',
   'Kware'
 ];
+
 ///
 ///
 ///
-final List<String> college = [
-  'N/A'
-];
+final List<String> college = ['N/A'];
 
 ///
 ///

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:responsive_dashboard/component/config/size_config.dart';
-import '../style/pallete.dart';
+import '../../style/pallete.dart';
 import 'package:responsive_dashboard/style/style.dart';
 
-import 'config/responsive.dart';
+import '../config/responsive.dart';
 
 class ActionCard extends StatelessWidget {
   final String image;

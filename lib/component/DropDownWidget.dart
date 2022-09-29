@@ -1,9 +1,8 @@
-
 import 'package:flutter/material.dart';
 
 import '../Log-in/pallete.dart';
 import 'DropDown.dart';
-import 'constants.dart';
+import 'constants/constants.dart';
 
 void main() {
   runApp(
@@ -266,7 +265,7 @@ class AppTextField extends StatefulWidget {
 
   ///Boolean that checks if any value is selected
   final bool isItemSelected;
-  final List<SelectedListItem>gender;
+  final List<SelectedListItem> gender;
   final List<SelectedListItem> church;
   final List<SelectedListItem> dpt;
   final List<SelectedListItem> cell;
@@ -279,15 +278,14 @@ class AppTextField extends StatefulWidget {
   //////
   //////
   AppTextField({
-     this.textEditingController,
-     this.title,
-     this.hint,
-     this.isItemSelected,
+    this.textEditingController,
+    this.title,
+    this.hint,
+    this.isItemSelected,
     this.gender,
     this.church,
     this.dpt,
     this.cell,
-  
   });
 
   @override

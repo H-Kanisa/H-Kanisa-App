@@ -19,28 +19,25 @@ Widget FormButton({
 }) {
   return Container(
       child: Center(
-        child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 50.0),
-                child: OutlinedButton(
-                  style: OutlinedButton.styleFrom(
-                    minimumSize: Size(465,50),
-                    backgroundColor: AppColor.greenHK,
-                    primary: Colors.white, //<-- SEE HERE
-                  ),
-                  onPressed: () {
-
-                  },
-                  child: Text(text,style: TextStyle(
-                      fontFamily: 'Poppins',
-                      fontSize: 17,
-                      color: AppColor.whiteHK,
-                      fontWeight: FontWeight.w700),),
-                ),
-              ),
-            ]),
-      )
-  );
+    child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+      Padding(
+        padding: const EdgeInsets.symmetric(vertical: 50.0),
+        child: OutlinedButton(
+          style: OutlinedButton.styleFrom(
+            minimumSize: Size(450, 50),
+            backgroundColor: AppColor.greenHK,
+          ),
+          onPressed:action,
+          child: Text(
+            text,
+            style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 17,
+                color: AppColor.whiteHK,
+                fontWeight: FontWeight.w700),
+          ),
+        ),
+      ),
+    ]),
+  ));
 }

@@ -1,4 +1,4 @@
-import 'package:responsive_dashboard/component/menuItems.dart';
+import 'package:responsive_dashboard/component/appbars/menuItems.dart';
 import 'package:flutter/material.dart';
 
 final itemsFirst = [
@@ -6,5 +6,3 @@ final itemsFirst = [
   menuItems(title: 'Admin', icon: Icons.admin_panel_settings_rounded),
   menuItems(title: 'Setup', icon: Icons.settings),
 ];
-
-

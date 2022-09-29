@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/Log-in/login_screen.dart';
-import 'package:responsive_dashboard/dashboard.dart';
+import 'package:responsive_dashboard/page/dashboard.dart';
 
 import 'package:responsive_dashboard/style/pallete.dart';
 

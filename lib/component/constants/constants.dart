@@ -7,7 +7,7 @@ const ARK = 'ARK';
 const CreativeArts = 'Creative Arts';
 const Media = 'Media';
 const Anaedea = 'Anaedea';
-const Biazo= 'Biazo';
+const Biazo = 'Biazo';
 // App Title
 const kTitle = 'DropDownList';
 

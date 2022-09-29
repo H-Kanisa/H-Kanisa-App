@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_core/theme.dart';
 import '../style/pallete.dart';
 
-abstract class viewDetails extends StatelessWidget {
+class viewDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -18,7 +18,7 @@ Widget Expandable({
   List list,
   VoidCallback action,
 }) {
-  return  DataTable(
+  return DataTable(
     columns: const <DataColumn>[
       DataColumn(
         label: Text(
@@ -64,4 +64,3 @@ Widget Expandable({
     ],
   );
 }
-

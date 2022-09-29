@@ -18,14 +18,15 @@ class PrimaryText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text,
-        style: TextStyle(
-          color: color,
-          height: height,
-          fontFamily: 'Poppins',
-          fontSize: size,
-          fontWeight: fontWeight,
-        ),);
+    return Text(
+      text,
+      style: TextStyle(
+        color: color,
+        height: height,
+        fontFamily: 'Poppins',
+        fontSize: size,
+        fontWeight: fontWeight,
+      ),
+    );
   }
 }
- 

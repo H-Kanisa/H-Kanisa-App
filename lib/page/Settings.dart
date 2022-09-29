@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 Widget build(BuildContext context) {
   return MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -19,7 +18,6 @@ class Settings extends StatefulWidget {
 
 class StartState extends State<Settings> {
   Widget build(BuildContext context) {
-    return Scaffold(
-        );
+    return Scaffold();
   }
 }
