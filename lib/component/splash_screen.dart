@@ -2,8 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/page/welcome_screen.dart';
-import '../Log-in/pallete.dart';
-import '../Log-in/login_screen.dart';
+import '../pallete.dart';
 
 void main() {
   runApp(SplashScreen());

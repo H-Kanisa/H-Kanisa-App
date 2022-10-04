@@ -7,6 +7,7 @@ import 'package:responsive_dashboard/page/Common_Items/DataSheet%20Master/Drop%2
 import 'package:responsive_dashboard/page/Common_Items/DataSheet%20Master/Pick%20Child.dart';
 import 'package:responsive_dashboard/page/Common_Items/DataSheet%20Master/Register%20Member.dart';
 import 'package:responsive_dashboard/page/Common_Items/DataSheet_master.dart';
+import 'package:responsive_dashboard/page/login_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           primarySwatch: Colors.blue,
           scaffoldBackgroundColor: Color.fromARGB(255, 245, 245, 248)),
-      home:PickChild(),
+      home: LoginScreen(),
     );
   }
 }

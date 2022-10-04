@@ -1,8 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import 'package:responsive_dashboard/Log-in/signup_screen.dart';
-
 import 'package:responsive_dashboard/component/CustomAppBar.dart';
 import 'package:responsive_dashboard/component/navigatormenu.dart';
 import 'package:responsive_dashboard/page/OnBoardingScreen.dart';

@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Dart & Flutter",
-            "program": "C:/Users/colli/OneDrive/Documents/GitHub/H-Kanisa-App/lib/main.dart",
+            "program": "H-Kanisa-App/lib/main.dart",
             "request": "launch",
             "type": "dart"
         }

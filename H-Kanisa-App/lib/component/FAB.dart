@@ -3,10 +3,8 @@ import 'package:flutter/material.dart';
 
 import 'package:responsive_dashboard/ManageUser.dart';
 import 'package:responsive_dashboard/dashboard.dart';
-import 'package:responsive_dashboard/page/People.dart';
 
 import '../pallete.dart';
-
 
 class FABBottomAppBarItem {
   FABBottomAppBarItem({this.iconData, this.text});
@@ -123,5 +121,3 @@ class FABBottomAppBarState extends State<FABBottomAppBar> {
     );
   }
 }
-
-

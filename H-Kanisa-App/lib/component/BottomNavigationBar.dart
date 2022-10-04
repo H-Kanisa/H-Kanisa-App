@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 import 'package:responsive_dashboard/ManageUser.dart';
 import 'package:responsive_dashboard/dashboard.dart';
-import 'package:responsive_dashboard/page/People.dart';
 
+import '../page/DashboardCards/People.dart';
 import '../pallete.dart';
 
 class bottomNav extends StatefulWidget {
@@ -13,7 +13,6 @@ class bottomNav extends StatefulWidget {
 }
 
 int _selectedIndex = 1;
-
 
 class bottomNavState extends State<bottomNav> {
   List<Widget> _widgetOptions = <Widget>[Dashboard(), People(), manageUsers()];
@@ -42,11 +41,10 @@ class bottomNavState extends State<bottomNav> {
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(body: Center(child: _widgetOptions.elementAt(_selectedIndex)));
+    return new Scaffold(
+        body: Center(child: _widgetOptions.elementAt(_selectedIndex)));
   }
 }
-
-
 
 Widget BottomNav({
   String title,
@@ -55,7 +53,7 @@ Widget BottomNav({
   return BottomNavigationBar(
     currentIndex: _selectedIndex,
     elevation: 10,
-   showSelectedLabels: false,
+    showSelectedLabels: false,
     showUnselectedLabels: false,
     selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
     selectedItemColor: AppColor.greenHK,
@@ -79,4 +77,3 @@ Widget BottomNav({
     ],
   );
 }
-

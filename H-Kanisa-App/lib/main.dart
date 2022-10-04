@@ -6,7 +6,8 @@ import 'package:responsive_dashboard/page/Common_Items/Test%20Components.dart';
 import 'package:responsive_dashboard/page/ScreenWrapper.dart';
 import 'package:responsive_dashboard/page/OnBoardingScreen.dart';
 import 'package:responsive_dashboard/page/Setup/Add%20Zone.dart';
-
+import 'package:responsive_dashboard/page2/Login.dart';
+import 'package:responsive_dashboard/page2/SignUp.dart';
 import 'component/DataTable.dart';
 
 void main() {
@@ -24,9 +25,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'H-Kanisa',
       theme: ThemeData(
-
           scaffoldBackgroundColor: Color.fromARGB(255, 255, 255, 255)),
-      home: Dashboard(),
+      home: SignUp(),
     );
   }
 }

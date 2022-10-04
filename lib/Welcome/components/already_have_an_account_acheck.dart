@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/pallete.dart';
-import 'package:responsive_dashboard/Log-in/pallete.dart';
 import 'package:responsive_dashboard/style/colors.dart';
 
 class AlreadyHaveAnAccountCheck extends StatelessWidget {
@@ -9,7 +8,7 @@ class AlreadyHaveAnAccountCheck extends StatelessWidget {
   const AlreadyHaveAnAccountCheck({
     this.login = true,
     this.press,
-  }); 
+  });
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,

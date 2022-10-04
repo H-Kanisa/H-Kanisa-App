@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:responsive_dashboard/Log-in/pallete.dart';
+
+import '../pallete.dart';
 
 void main() {
   runApp(

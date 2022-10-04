@@ -2,7 +2,6 @@ import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/ManageUser.dart';
 import 'package:responsive_dashboard/dashboard.dart';
-import 'package:responsive_dashboard/page/People.dart';
 import 'package:responsive_dashboard/style/colors.dart';
 import '../pallete.dart';
 
@@ -36,7 +35,7 @@ class _HomePageState extends State<HomePage> {
   int pageIndex = 1;
 
   final pages = [
-    People(),
+    //People(),
     Dashboard(),
     manageUsers(),
   ];

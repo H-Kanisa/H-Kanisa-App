@@ -23,7 +23,7 @@ class AppColor {
 
   static const Color BACK_GROUND_COLOR = Color(0xFF94C13D);
   static const Color whiteHK = Color.fromRGBO(255, 255, 255, 1);
-  static const Color greenHK = Color(0xFF94C13D);
+  static const Color greenHK = Color.fromARGB(255, 148, 193, 61);
   static const Color blueHK = Color.fromRGBO(58, 63, 149, 1);
   static const Color greyHK = Color.fromRGBO(51, 51, 51, 1);
   static const Color redHK = Color(0xFFE9232A);

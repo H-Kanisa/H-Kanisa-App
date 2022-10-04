@@ -3,6 +3,7 @@ import 'package:responsive_dashboard/component/CustomButton.dart';
 import 'package:responsive_dashboard/component/FormBirthday.dart';
 import 'package:responsive_dashboard/component/FormText.dart';
 import 'package:responsive_dashboard/component/List.dart';
+import 'package:responsive_dashboard/page/Setup/Add%20College.dart';
 
 import '../../../component/FormOptions.dart';
 import '../../../component/TitleAppBar.dart';
@@ -14,7 +15,6 @@ class addCell extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Container(
@@ -35,8 +35,8 @@ class addCell extends StatelessWidget {
                     FormText(text: "Cell"),
                     FormDropDown(text: "Church", list: church),
                     FormDropDown(text: "Branch", list: branch),
-                    FormDropDown(text: "College", list: college),
                     FormDropDown(text: "Zone", list: zone),
+                    //FormDropDown(text: "College", list: college),
                     FormButton(text: "Submit")
                   ],
                 ),

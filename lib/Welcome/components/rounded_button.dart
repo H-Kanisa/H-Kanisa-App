@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/Log-in/pallete.dart';
 import 'package:responsive_dashboard/Welcome/constants.dart';
 import 'package:responsive_dashboard/pallete.dart';
 
