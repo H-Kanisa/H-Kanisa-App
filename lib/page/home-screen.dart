@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'Admin.dart';
 import 'Common_Items_Page.dart';
 import 'Setup_Page.dart';
-import 'package:responsive_dashboard/pallete.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
 import 'package:responsive_dashboard/component/navigatormenu.dart';
 
 void main() {

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/component/CustomButton.dart';
-import 'package:responsive_dashboard/component/FormBirthday.dart';
-import 'package:responsive_dashboard/component/FormText.dart';
-import 'package:responsive_dashboard/component/List.dart';
+import 'package:responsive_dashboard/component/form/CustomButton.dart';
+import 'package:responsive_dashboard/component/Form/FormBirthday.dart';
+import 'package:responsive_dashboard/component/Form/FormText.dart';
+import 'package:responsive_dashboard/component/constants/List.dart';
 
-import '../../../component/FormOptions.dart';
-import '../../../component/TitleAppBar.dart';
+import '../../component/Form/FormOptions.dart';
+import '../../component/Form/FormTitle.dart';
 import '../Setup_Page.dart';
 
 //import '../pallete.dart';

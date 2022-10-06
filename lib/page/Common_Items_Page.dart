@@ -1,18 +1,13 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-
-import 'package:responsive_dashboard/Log-in/signup_screen.dart';
-
-import 'package:responsive_dashboard/component/CustomAppBar.dart';
+import 'package:responsive_dashboard/Log-in/pallete.dart';
+import 'package:responsive_dashboard/component/appbars/CustomAppBar.dart';
+import 'package:responsive_dashboard/component/appbars/NavBar.dart';
 import 'package:responsive_dashboard/component/navigatormenu.dart';
-import 'package:responsive_dashboard/page/OnBoardingScreen.dart';
-import 'package:responsive_dashboard/pallete.dart';
-import 'package:responsive_dashboard/dashboard.dart';
-
-import '../component/ListBuilder.dart';
+import 'package:responsive_dashboard/page/dashboard.dart';
+import '../component/listview/ListBuilder.dart';
 import 'Common_Items/Attendance Report.dart';
-import 'Common_Items/Attendance.dart';
 import 'Common_Items/DataSheet_master.dart';
+import 'Common_Items/Test Components.dart';
 import 'Common_Items/Visitation Report.dart';
 
 Widget build(BuildContext context) {
@@ -34,16 +29,14 @@ class Common_Items extends StatefulWidget {
 class StartState extends State<Common_Items> {
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: AppColor.scaffoldColor,
         appBar: CustomAppBar(
-            title: "Common Items",
-            onClickedHome: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: ((context) => Dashboard())));
-            },
-            onClickedBack: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: ((context) => IconMenu())));
-            }),
+          title: "Common Items",
+          onClickedHome: () {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: ((context) => Dashboard())));
+          },
+        ),
         body: ListView(children: <Widget>[
           Padding(padding: EdgeInsets.symmetric(vertical: 5)),
           BuildList(
@@ -78,6 +71,15 @@ class StartState extends State<Common_Items> {
               builder: (context) => visitationReport(),
             )),
           ),
-        ]));
+          BuildList(
+            icon: Icons.person_pin_circle,
+            title: "Test Components",
+            desc: "Brief Description",
+            onClicked: () => Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => TestComponents(),
+            )),
+          ),
+        ]),
+        bottomNavigationBar: NavBar());
   }
 }

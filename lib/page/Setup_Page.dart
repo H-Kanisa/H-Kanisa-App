@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/component/ListBuilder.dart';
-import 'package:responsive_dashboard/component/CustomAppBar.dart';
+import 'package:responsive_dashboard/component/listview/ListBuilder.dart';
+import 'package:responsive_dashboard/component/appbars/CustomAppBar.dart';
 import 'package:responsive_dashboard/page/Setup/Add%20Branch.dart';
 import 'package:responsive_dashboard/page/Setup/Add%20Cell%20Group.dart';
 import 'package:responsive_dashboard/page/Setup/Add%20College.dart';
@@ -10,10 +10,10 @@ import 'package:responsive_dashboard/page/Setup/Add%20Service%20Type.dart';
 import 'package:responsive_dashboard/page/Setup/Add%20Zone.dart';
 import 'package:responsive_dashboard/page/Setup/Manage%20Access%20Views.dart';
 
-import 'package:responsive_dashboard/pallete.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
 
 import '../component/navigatormenu.dart';
-import '../dashboard.dart';
+import 'dashboard.dart';
 import 'Common_Items/DataSheet_master.dart';
 
 Widget build(BuildContext context) => MaterialApp(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/style/colors.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
 
 class PrimaryText extends StatelessWidget {
   final double size;
@@ -11,21 +11,22 @@ class PrimaryText extends StatelessWidget {
   const PrimaryText({
     this.text,
     this.fontWeight: FontWeight.w400,
-    this.color: AppColors.primary,
+    this.color: AppColor.greyHK,
     this.size: 20,
     this.height: 1.3,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Text(text,
-        style: TextStyle(
-          color: color,
-          height: height,
-          fontFamily: 'Poppins',
-          fontSize: size,
-          fontWeight: fontWeight,
-        ),);
+    return Text(
+      text,
+      style: TextStyle(
+        color: color,
+        height: height,
+        fontFamily: 'Poppins',
+        fontSize: size,
+        fontWeight: fontWeight,
+      ),
+    );
   }
 }
- 

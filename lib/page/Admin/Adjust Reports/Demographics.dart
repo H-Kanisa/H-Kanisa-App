@@ -4,12 +4,12 @@ import 'package:responsive_dashboard/main.dart';
 import 'package:responsive_dashboard/page/Admin.dart';
 import 'package:responsive_dashboard/page/Common_Items/DataSheet_master.dart';
 import 'package:responsive_dashboard/page/Setup_Page.dart';
-import 'package:responsive_dashboard/pallete.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
 
-import '../../../component/CustomAppBar.dart';
-import '../../../component/ListBuilder.dart';
+import '../../../component/appbars/CustomAppBar.dart';
+import '../../../component/listview/ListBuilder.dart';
 import '../../../component/navigatormenu.dart';
-import '../../../dashboard.dart';
+import '../../dashboard.dart';
 
 Widget build(BuildContext context) => MaterialApp(
       debugShowCheckedModeBanner: false,

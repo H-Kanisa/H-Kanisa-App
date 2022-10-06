@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/pallete.dart';
+import 'package:responsive_dashboard/style/pallete.dart';
 import 'package:responsive_dashboard/Log-in/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -32,7 +32,6 @@ class StartState extends State<SplashScreen> {
               child: Image.asset("assets/main-horizontal.png"),
               height: 300,
               width: 300,
-            
             ),
           )
         ],

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/config/responsive.dart';
-import 'package:responsive_dashboard/config/size_config.dart';
-import '../pallete.dart';
+import '../style/pallete.dart';
 import 'navigatormenu.dart';
 
 class inputText extends StatelessWidget {
