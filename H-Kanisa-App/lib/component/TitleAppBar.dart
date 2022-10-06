@@ -18,6 +18,7 @@ Widget FormTitle({
   IconData icon,
   VoidCallback onClicked,
 }) {
+
   return Padding(
     padding: const EdgeInsets.only(top: 20),
     child: Column(
@@ -45,9 +46,39 @@ Widget FormTitle({
                 color: AppColor.greyHK,
                 fontFamily: "Poppins",
                 fontWeight: FontWeight.w600),
+  return Align(
+    alignment: Alignment.topLeft,
+    child: Padding(
+      padding: const EdgeInsets.only(top: 30),
+      child: Column(
+        verticalDirection: VerticalDirection.down,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Transform.scale(
+            scale: 1.0,
+            child: IconButton(
+                alignment: Alignment.topLeft,
+                padding: EdgeInsets.zero,
+                constraints: BoxConstraints(),
+                icon: Icon(Icons.arrow_back, color: AppColor.greyHK, size: 32),
+                onPressed: onClicked),
+>>>>>>> Stashed changes
           ),
-        )
-      ],
+
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 5).add(EdgeInsets.only(top: 20)),
+            child: Text(
+              title,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontSize: 30,
+                  color: AppColor.greyHK,
+                  fontFamily: "Poppins",
+                  fontWeight: FontWeight.w600),
+            ),
+          )
+        ],
+      ),
     ),
   );
 }
