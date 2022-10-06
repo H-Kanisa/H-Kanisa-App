@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD:lib/component/appbars/SliverAppBar.dart
 import '../../style/pallete.dart';
 import '../navigatormenu.dart';
+=======
+import '../pallete.dart';
+import 'navigatormenu.dart';
+>>>>>>> main:H-Kanisa-App/lib/component/SliverAppBar.dart
 
 class customAppBar extends StatelessWidget {
   @override
