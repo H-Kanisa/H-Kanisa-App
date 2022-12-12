@@ -15,6 +15,7 @@ abstract class formBirthday extends StatelessWidget {
 Widget FormBirthday({
   String text,
   String hint,
+  TextEditingController controller,
   IconData prefix,
   IconData suffix,
   VoidCallback onClicked,
@@ -45,6 +46,7 @@ Widget FormBirthday({
         },
         behavior: HitTestBehavior.opaque,
         child: TextFormField(
+          controller: controller,
           enabled: onClicked == null,
           maxLines: 3,
           cursorColor: AppColor.greenHK,

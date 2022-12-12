@@ -36,11 +36,11 @@ class DataSheetState extends State<DataSheet> {
           title: "Data Sheet Master",
           onClickedHome: () {
             Navigator.of(context)
-                .push(MaterialPageRoute(builder: ((context) => Dashboard())));
+                .push(MaterialPageRoute(builder: ((context) => Common_Items())));
           },
           onClickedBack: () {
             Navigator.of(context).push(
-                MaterialPageRoute(builder: ((context) => Common_Items())));
+                    MaterialPageRoute(builder: ((context) => Common_Items())));
           }),
       body: ListView(children: <Widget>[
         Padding(padding: EdgeInsets.symmetric(vertical: 5)),

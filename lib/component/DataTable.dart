@@ -1,9 +1,9 @@
 // main.dart
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/Log-in/pallete.dart';
 import 'package:responsive_dashboard/page/Common_Items/Test%20Components.dart';
 
 import '../page/Common_Items/DataSheet Master/View MemberDetails.dart';
+import '../style/pallete.dart';
 import 'Form/FormTitle.dart';
 
 void main() {
@@ -75,7 +75,6 @@ class _DataViewComponentState extends State<DataViewComponent> {
     });
   }
 
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(

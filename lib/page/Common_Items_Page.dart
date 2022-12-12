@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/Log-in/pallete.dart';
+
 import 'package:responsive_dashboard/component/appbars/CustomAppBar.dart';
 import 'package:responsive_dashboard/component/appbars/NavBar.dart';
 import 'package:responsive_dashboard/component/navigatormenu.dart';
+import 'package:responsive_dashboard/page/Common_Items/Attendance.dart';
 import 'package:responsive_dashboard/page/dashboard.dart';
 import '../component/listview/ListBuilder.dart';
+import '../style/pallete.dart';
 import 'Common_Items/Attendance Report.dart';
 import 'Common_Items/DataSheet_master.dart';
 import 'Common_Items/Test Components.dart';
@@ -42,7 +44,7 @@ class StartState extends State<Common_Items> {
           BuildList(
             icon: Icons.data_saver_off_sharp,
             title: "Data Sheet Master",
-            desc: "Brief Description",
+            desc: "Under Development",
             onClicked: () => Navigator.of(context).push(MaterialPageRoute(
               builder: (context) => DataSheet(),
             )),
@@ -50,18 +52,19 @@ class StartState extends State<Common_Items> {
           BuildList(
             icon: Icons.people_alt_rounded,
             title: "Attendance",
-            desc: "Brief Description",
+            desc: "Not Ready",
             onClicked: () => Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => attendanceReport(),
+              builder: (context) => attendance(),
             )),
           ),
+          /*
           BuildList(
-            icon: Icons.person_pin_circle,
-            title: "Attendance Report",
-            desc: "Brief Description",
-            onClicked: () => Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => attendanceReport(),
-            )),
+          icon: Icons.person_pin_circle,
+          title: "Attendance Report",
+          desc: "Brief Description",
+          onClicked: () => Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => attendanceReport(),
+          )),
           ),
           BuildList(
             icon: Icons.person_pin_circle,
@@ -78,7 +81,7 @@ class StartState extends State<Common_Items> {
             onClicked: () => Navigator.of(context).push(MaterialPageRoute(
               builder: (context) => TestComponents(),
             )),
-          ),
+          ),*/
         ]),
         bottomNavigationBar: NavBar());
   }

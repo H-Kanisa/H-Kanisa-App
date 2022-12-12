@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD:lib/component/appbars/header.dart
-import '../../style/pallete.dart';
-=======
-import '../Welcome/responsive/responsive.dart';
-import '../pallete.dart';
->>>>>>> main:H-Kanisa-App/lib/component/header.dart
-import 'package:responsive_dashboard/style/style.dart';
 
+import '../../style/pallete.dart';
+import '../../style/style.dart';
 import '../config/responsive.dart';
 
 class Header extends StatelessWidget {

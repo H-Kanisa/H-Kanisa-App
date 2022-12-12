@@ -25,6 +25,7 @@ dependencies:
   flutter:
     sdk: flutter 
   date_format: ^2.0.6
+  http: ^0.12.2
   intl: ^0.15.7
   dropdown_button2: ^1.6.3
   syncfusion_flutter_datagrid: ^18.3.35-bet
@@ -74,7 +75,10 @@ flutter:
     - assets/AddMember.png
     - assets/Visitation.png
     - assets/ManageUsers.png
-
+    - assets/MPesa.png
+    - assets/PaymentError.png
+    - assets/ConfirmPayment.png
+    - assets/Cash.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

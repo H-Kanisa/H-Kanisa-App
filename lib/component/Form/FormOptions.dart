@@ -16,6 +16,7 @@ abstract class formDropDown extends StatelessWidget {
 
 Widget FormDropDown({
   String text,
+  TextEditingController controller,
   String hint,
   IconData prefix,
   List list,
@@ -93,6 +94,7 @@ Widget FormDropDown({
                   ),
                 ))
             .toList(),
+
         validator: (value) {
           if (value == null) {
             return 'Please select gender.';

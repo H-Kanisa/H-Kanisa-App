@@ -14,6 +14,7 @@ abstract class formText extends StatelessWidget {
 Widget FormText({
   String text,
   String hint,
+  TextEditingController controller,
   IconData prefix,
   IconData suffix,
   VoidCallback onClicked,
@@ -38,6 +39,7 @@ Widget FormText({
       Padding(padding: EdgeInsets.symmetric(vertical: 3)),
       TextFormField(
         maxLines: 3,
+        controller: controller,
         cursorColor: AppColor.greenHK,
         minLines: 1,
         style: TextStyle(

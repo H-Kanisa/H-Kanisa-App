@@ -1,12 +1,13 @@
 // main.dart
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/Log-in/pallete.dart';
 import 'package:responsive_dashboard/page/Common_Items/DataSheet%20Master/Register%20Member.dart';
+import 'package:responsive_dashboard/page/Common_Items/DataSheet_master.dart';
 import 'package:responsive_dashboard/page/Common_Items/Test%20Components.dart';
 import 'package:responsive_dashboard/page/Setup/Add%20Church.dart';
 
 import '../../../component/form/CustomButton.dart';
 import '../../../component/Form/FormTitle.dart';
+import '../../../style/pallete.dart';
 import 'View MemberDetails.dart';
 
 void main() {
@@ -92,7 +93,7 @@ class _viewMembersState extends State<viewMembers> {
                     title: "View Members",
                     onClicked: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => TestComponents(),
+                        builder: (context) => DataSheet(),
                       ));
                     })),
             const SizedBox(
@@ -315,8 +316,12 @@ class _viewMembersState extends State<viewMembers> {
                                                   child: Row(
                                                     children: [
                                                       GestureDetector(
-                                                        onTap: () =>Navigator.of(context).push(MaterialPageRoute(
-                                                          builder: (context) => regMember(),
+                                                        onTap: () => Navigator
+                                                                .of(context)
+                                                            .push(
+                                                                MaterialPageRoute(
+                                                          builder: (context) =>
+                                                              regMember(),
                                                         )),
                                                         child: Container(
                                                             height: 11,
@@ -325,7 +330,8 @@ class _viewMembersState extends State<viewMembers> {
                                                               child: Row(
                                                                 children: [
                                                                   Icon(
-                                                                    Icons.person,
+                                                                    Icons
+                                                                        .person,
                                                                     size: 15,
                                                                     color: AppColor
                                                                         .blueHK,
@@ -361,18 +367,22 @@ class _viewMembersState extends State<viewMembers> {
                                                 child: Row(
                                                   children: [
                                                     GestureDetector(
-                                                      onTap: () => Navigator.of(context).push(MaterialPageRoute(
-                                                builder: (context) => regMember(),
-                                              )),
+                                                      onTap: () => Navigator.of(
+                                                              context)
+                                                          .push(
+                                                              MaterialPageRoute(
+                                                        builder: (context) =>
+                                                            regMember(),
+                                                      )),
                                                       child: Container(
-
                                                           height: 11,
                                                           width: 65,
                                                           child: Center(
                                                             child: Row(
                                                               children: [
                                                                 Icon(
-                                                                  Icons.place_rounded,
+                                                                  Icons
+                                                                      .place_rounded,
                                                                   size: 15,
                                                                   color: AppColor
                                                                       .redHK,

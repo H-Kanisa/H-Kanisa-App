@@ -1,42 +1,35 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import 'package:responsive_dashboard/Log-in/signup_screen.dart';
-
-import 'package:responsive_dashboard/component/CustomAppBar.dart';
-import 'package:responsive_dashboard/component/navigatormenu.dart';
-import 'package:responsive_dashboard/page/OnBoardingScreen.dart';
-import 'package:responsive_dashboard/pallete.dart';
-import 'package:responsive_dashboard/dashboard.dart';
-
-import '../component/BottomNavigationBar.dart';
-import '../component/ListBuilder.dart';
-import 'Common_Items/Attendance Report.dart';
-import 'Common_Items/Attendance.dart';
-import 'Common_Items/DataSheet_master.dart';
-import 'Common_Items/Visitation Report.dart';
+import '../../component/appbars/CustomAppBar.dart';
+import '../../component/listview/ListBuilder.dart';
+import '../../component/navigatormenu.dart';
+import '../dashboard.dart';
+import 'Attendance Report.dart';
+import 'DataSheet_master.dart';
+import 'Visitation Report.dart';
 
 Widget build(BuildContext context) {
   return MaterialApp(
     debugShowCheckedModeBanner: false,
-    title: 'Common Items',
+    title: 'Settings',
     theme: ThemeData(
       primarySwatch: Colors.blue,
     ),
-    home: Common_Items(),
+    home: Settings(),
   );
 }
 
-class Common_Items extends StatefulWidget {
+class Settings extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => StartState();
 }
 
-class StartState extends State<Common_Items> {
+class StartState extends State<Settings> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: CustomAppBar(
-            title: "Common Items",
+            title: "Settings",
             onClickedHome: () {
               Navigator.of(context)
                   .push(MaterialPageRoute(builder: ((context) => Dashboard())));
@@ -45,41 +38,6 @@ class StartState extends State<Common_Items> {
               Navigator.of(context)
                   .push(MaterialPageRoute(builder: ((context) => IconMenu())));
             }),
-        body: ListView(children: <Widget>[
-          Padding(padding: EdgeInsets.symmetric(vertical: 5)),
-          BuildList(
-            icon: Icons.data_saver_off_sharp,
-            title: "Data Sheet Master",
-            desc: "Brief Description",
-            onClicked: () => Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => DataSheet(),
-            )),
-          ),
-          BuildList(
-            icon: Icons.people_alt_rounded,
-            title: "Attendance",
-            desc: "Brief Description",
-            onClicked: () => Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => attendanceReport(),
-            )),
-          ),
-          BuildList(
-            icon: Icons.person_pin_circle,
-            title: "Attendance Report",
-            desc: "Brief Description",
-            onClicked: () => Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => attendanceReport(),
-            )),
-          ),
-          BuildList(
-            icon: Icons.person_pin_circle,
-            title: "Visitation Report",
-            desc: "Brief Description",
-            onClicked: () => Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => visitationReport(),
-            )),
-          ),
-        ]),
-        bottomNavigationBar: BottomNav());
+        );
   }
 }

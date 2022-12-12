@@ -99,7 +99,7 @@ class People extends StatelessWidget {
               ),
             ],
           ),
-        ),
-        bottomNavigationBar: NavBar());
+        ));
+       //bottomNavigationBar: NavBar());
   }
 }

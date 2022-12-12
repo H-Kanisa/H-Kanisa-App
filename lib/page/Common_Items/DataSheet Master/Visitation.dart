@@ -1,10 +1,10 @@
 // main.dart
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/Log-in/pallete.dart';
 import 'package:responsive_dashboard/page/Common_Items/DataSheet_master.dart';
 import 'package:responsive_dashboard/page/Common_Items/Test%20Components.dart';
 
 import '../../../component/Form/FormTitle.dart';
+import '../../../style/pallete.dart';
 
 void main() {
   runApp(const MyApp());

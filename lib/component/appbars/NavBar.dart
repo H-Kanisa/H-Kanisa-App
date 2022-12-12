@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:responsive_dashboard/Log-in/pallete.dart';
 import 'package:responsive_dashboard/page/Dashboard/ManageUser.dart';
 import 'package:responsive_dashboard/page/dashboard.dart';
 import 'package:responsive_dashboard/page/Common_Items/Test%20Components.dart';
 import 'package:responsive_dashboard/page/Dashboard/People.dart';
 import 'package:responsive_dashboard/page/Settings.dart';
+
+import '../../style/pallete.dart';
 
 class NavBar extends StatefulWidget {
   @override
@@ -64,7 +65,7 @@ class NavBarState extends State<NavBar> {
                   width: index == currentIndex ? displayWidth * .32 : 0,
                   decoration: BoxDecoration(
                     color: index == currentIndex
-                        ? AppColor.blueHK.withOpacity(.1)
+                        ? AppColor.greyHK.withOpacity(.1)
                         : Colors.transparent,
                     borderRadius: BorderRadius.circular(50),
                   ),
@@ -102,9 +103,9 @@ class NavBarState extends State<NavBar> {
                                   ? '${listOfStrings[index]}'
                                   : '',
                               style: TextStyle(
-                                color: AppColor.blueHK,
+                                color: AppColor.greyHK,
                                 fontFamily: "Poppins",
-                                fontWeight: FontWeight.w600,
+                                fontWeight: FontWeight.w800,
                                 fontSize: 15,
                               ),
                             ),
@@ -126,7 +127,7 @@ class NavBarState extends State<NavBar> {
                                 listOfIcons[index],
                                 size: displayWidth * .076,
                                 color: index == currentIndex
-                                    ? AppColor.blueHK
+                                    ? AppColor.greyHK
                                     : AppColor.midGreyHk,
                               ),
                               onPressed: () {

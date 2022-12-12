@@ -1,22 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-<<<<<<< HEAD:lib/page/Common_Items/Test Components.dart
-import 'package:responsive_dashboard/page/dashboard.dart';
-import 'package:responsive_dashboard/main.dart';
-import 'package:responsive_dashboard/page/Common_Items/DataSheet_master.dart';
-import 'package:responsive_dashboard/style/pallete.dart';
-
-import '../../component/DataTable.dart';
+import '../../component/appbars/DataTable.dart';
 import '../../component/appbars/NavBar.dart';
-=======
-import 'package:responsive_dashboard/dashboard.dart';
-import 'package:responsive_dashboard/main.dart';
-import 'package:responsive_dashboard/page/Common_Items/DataSheet_master.dart';
-import 'package:responsive_dashboard/pallete.dart';
-
-import '../../component/DataTable.dart';
-import '../../component/NavBar.dart';
->>>>>>> main:H-Kanisa-App/lib/page/Common_Items/Test Components.dart
+import '../../style/pallete.dart';
+import '../dashboard.dart';
+import 'DataSheet_master.dart';
 
 Widget build(BuildContext context) => MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -105,10 +93,6 @@ class TestComponents extends StatelessWidget {
         ]),
         bottomNavigationBar: NavBar(),
       ),
-<<<<<<< HEAD:lib/page/Common_Items/Test Components.dart
-=======
-
->>>>>>> main:H-Kanisa-App/lib/page/Common_Items/Test Components.dart
     );
   }
 }

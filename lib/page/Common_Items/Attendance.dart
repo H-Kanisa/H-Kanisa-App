@@ -1,5 +1,10 @@
+import 'dart:html';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/page/Admin/Adjust%20Reports/Department%20Attendance.dart';
+import 'package:responsive_dashboard/page/Admin/Adjust%20Reports/HOD%20Attendance.dart';
+import 'package:responsive_dashboard/page/Common_Items/Attendance/Cell%20Attendance.dart';
 import 'package:responsive_dashboard/page/dashboard.dart';
 import 'package:responsive_dashboard/main.dart';
 import 'package:responsive_dashboard/page/Common_Items/DataSheet_master.dart';
@@ -9,6 +14,7 @@ import 'package:responsive_dashboard/style/pallete.dart';
 import '../../component/appbars/CustomAppBar.dart';
 import '../../component/listview/ListBuilder.dart';
 import '../../component/navigatormenu.dart';
+import 'Attendance/Department Attendance.dart';
 
 Widget build(BuildContext context) => MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -26,8 +32,8 @@ class attendance extends StatelessWidget {
         appBar: CustomAppBar(
             title: "Setup",
             onClickedHome: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => Dashboard()));
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => Common_Items()));
             },
             onClickedBack: () {
               Navigator.of(context).push(
@@ -39,21 +45,21 @@ class attendance extends StatelessWidget {
             icon: Icons.people_sharp,
             title: "Department Attendance",
             onClicked: () => Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => DataSheet(),
+              builder: (context) => departmentAttendance(),
             )),
           ),
           BuildList(
             icon: Icons.people_sharp,
             title: "Cell Attendance",
             onClicked: () => Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => DataSheet(),
+              builder: (context) => cellAttendance(),
             )),
           ),
           BuildList(
             icon: Icons.people_sharp,
             title: "HOD Attendance",
             onClicked: () => Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => DataSheet(),
+              builder: (context) => hodAtt(),
             )),
           ),
         ]),

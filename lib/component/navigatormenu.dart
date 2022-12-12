@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/page/Dashboard/M-Pesa.dart';
 import 'package:responsive_dashboard/page/dashboard.dart';
 import 'package:responsive_dashboard/style/pallete.dart';
 import 'package:responsive_dashboard/page/Common_Items_Page.dart';
@@ -45,7 +46,15 @@ class _IconMenuState extends State<IconMenu> {
                   icon: Icons.library_books_sharp,
                   onClicked: () => selectedItem(context, 0),
                 ),
+                buildMenuItem(
+                  text: 'M-Pesa',
+                  icon: Icons.monetization_on,
+                  onClicked: () => selectedItem(context, 3),
+                ),
 
+               /*
+               *
+               *
                 buildMenuItem(
                   text: 'Admin',
                   icon: Icons.admin_panel_settings,
@@ -57,6 +66,8 @@ class _IconMenuState extends State<IconMenu> {
                   icon: Icons.settings_sharp,
                   onClicked: () => selectedItem(context, 2),
                 ),
+               *
+               * */
 
                 Divider(color: Colors.white70),
               ],
@@ -120,7 +131,7 @@ void selectedItem(BuildContext context, int index) {
 
     case 3:
       Navigator.of(context).push(MaterialPageRoute(
-        builder: (context) => Dashboard(),
+        builder: (context) => MPesa(),
       ));
 
       break;

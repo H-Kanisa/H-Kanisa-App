@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../Log-in/pallete.dart';
+import '../style/pallete.dart';
 import 'DropDown.dart';
 import 'constants/constants.dart';
 

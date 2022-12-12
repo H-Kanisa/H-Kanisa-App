@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:responsive_dashboard/component/config/size_config.dart';
-import '../pallete.dart';
+
 import 'package:responsive_dashboard/style/style.dart';
 
+import '../../style/pallete.dart';
 import 'config/responsive.dart';
 
 class ActionCard extends StatelessWidget {
@@ -38,7 +39,6 @@ class ActionCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(image, width: 80),
-
             PrimaryText(
               text: title,
               size: 18,

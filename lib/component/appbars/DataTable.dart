@@ -1,10 +1,10 @@
 // main.dart
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/Log-in/pallete.dart';
-import 'package:responsive_dashboard/page/Common_Items/Test%20Components.dart';
 
-import '../page/Common_Items/DataSheet Master/View MemberDetails.dart';
-import 'TitleAppBar.dart';
+import '../../page/Common_Items/DataSheet Master/View MemberDetails.dart';
+import '../../page/Common_Items/Test Components.dart';
+import '../../style/pallete.dart';
+import '../Form/FormTitle.dart';
 
 void main() {
   runApp(const MyApp());
@@ -64,7 +64,7 @@ class _DataViewComponentState extends State<DataViewComponent> {
     } else {
       results = _allUsers
           .where((user) =>
-          user["name"].toLowerCase().contains(enteredKeyword.toLowerCase()))
+              user["name"].toLowerCase().contains(enteredKeyword.toLowerCase()))
           .toList();
       // we use the toLowerCase() method to make it case-insensitive
     }
@@ -75,14 +75,12 @@ class _DataViewComponentState extends State<DataViewComponent> {
     });
   }
 
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: Padding(
-        padding: const EdgeInsets.all(10).add(EdgeInsets.symmetric(horizontal: 15)),
+        padding:
+            const EdgeInsets.all(10).add(EdgeInsets.symmetric(horizontal: 15)),
         child: Column(
           children: [
             Container(
@@ -126,10 +124,8 @@ class _DataViewComponentState extends State<DataViewComponent> {
               height: 5,
             ),
             Expanded(
-
-
-                    child: _foundUsers.isNotEmpty
-                        ? ListView.builder(
+              child: _foundUsers.isNotEmpty
+                  ? ListView.builder(
                       itemCount: _foundUsers.length,
                       itemBuilder: (context, index) => Card(
                         key: ValueKey(_foundUsers[index]["id"]),
@@ -145,29 +141,34 @@ class _DataViewComponentState extends State<DataViewComponent> {
                                 fontWeight: FontWeight.w500,
                                 fontSize: 17),
                           ),
-                          title: Text(_foundUsers[index]['name'],style: TextStyle(
-                              color: AppColor.greyHK,
-                              fontFamily: "Poppins",
-                              fontWeight: FontWeight.w600,
-                              fontSize: 14),),
-                          onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                          title: Text(
+                            _foundUsers[index]['name'],
+                            style: TextStyle(
+                                color: AppColor.greyHK,
+                                fontFamily: "Poppins",
+                                fontWeight: FontWeight.w600,
+                                fontSize: 14),
+                          ),
+                          onTap: () =>
+                              Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => viewMembersDetails(),
                           )),
                           subtitle: Text(
-                              '${_foundUsers[index]["age"].toString()} years old',style: TextStyle(
-                              color: AppColor.greyHK,
-                              fontFamily: "Poppins",
-                              fontWeight: FontWeight.w400,
-                              fontSize: 13),),
+                            '${_foundUsers[index]["age"].toString()} years old',
+                            style: TextStyle(
+                                color: AppColor.greyHK,
+                                fontFamily: "Poppins",
+                                fontWeight: FontWeight.w400,
+                                fontSize: 13),
+                          ),
                         ),
                       ),
                     )
-                        : const Text(
+                  : const Text(
                       'No results found',
                       style: TextStyle(fontSize: 24),
                     ),
-                  ),
-
+            ),
           ],
         ),
       ),
